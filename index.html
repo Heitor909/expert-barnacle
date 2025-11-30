@@ -1,23 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floresta Aventura</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Floresta Aventura</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="ui">
+    <div id="menu" class="overlay">
+      <h1>Floresta Aventura</h1>
+      <p>Escolha seu personagem</p>
+      <div id="characters"></div>
+      <div class="hint">PC: ← → para andar, ↑ ou W para pular, Espaço = habilidade • No celular use botões</div>
+    </div>
 
-<div id="menu">
-    <h1>Escolha seu Personagem</h1>
+    <div id="hud" class="overlay small" style="display:none;">
+      <div id="life">Vida: <span id="lifeVal">100</span></div>
+      <div id="level">Fase: <span id="levelVal">1</span></div>
+      <div id="enemiesLeft">Inimigos: <span id="enLeftVal">0</span></div>
+    </div>
 
-    <div id="personagens"></div>
-</div>
+    <div id="message" class="overlay large" style="display:none;"></div>
+  </div>
 
-<canvas id="gameCanvas" width="800" height="500"></canvas>
+  <canvas id="gameCanvas" width="960" height="540"></canvas>
 
-<script src="loader.js"></script>
-<script src="game.js"></script>
+  <div id="touch-controls" class="touch-controls">
+    <button id="btnLeft">←</button>
+    <button id="btnRight">→</button>
+    <button id="btnJump">⤒</button>
+    <button id="btnAttack">⚔</button>
+    <button id="btnAbility">★</button>
+  </div>
 
+  <script src="config.js"></script>
+  <script src="game.js"></script>
 </body>
 </html>
