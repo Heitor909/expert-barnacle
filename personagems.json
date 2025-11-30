@@ -1,22 +1,7 @@
 {
-    "macaco": {
-        "frames": 4,
-        "habilidade": "pulo_duplo"
-    },
-    "tigre": {
-        "frames": 3,
-        "habilidade": "dash"
-    },
-    "papagaio": {
-        "frames": 4,
-        "habilidade": "voar"
-    },
-    "cobra": {
-        "frames": 4,
-        "habilidade": "deslizar"
-    },
-    "elefante": {
-        "frames": 5,
-        "habilidade": "super_forca"
-    }
+  "macaco": {"frames":4,"habilidade":"pulo_alto"},
+  "tigre": {"frames":3,"habilidade":"dash"},
+  "papagaio": {"frames":4,"habilidade":"planar"},
+  "cobra": {"frames":4,"habilidade":"deslizar"},
+  "elefante": {"frames":5,"habilidade":"investida"}
 }
