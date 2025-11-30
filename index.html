@@ -1,28 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Jogo da Floresta</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floresta Aventura</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="menu" class="overlay">
-    <h1>Jogo da Floresta</h1>
-    <p>Escolha seu personagem</p>
-    <div id="characters"></div>
-    <div class="hint">PC: setas / WASD | Habilidade: Espaço<br>Celular: use os botões</div>
-  </div>
 
-  <canvas id="game" width="960" height="540"></canvas>
+<div id="menu">
+    <h1>Escolha seu Personagem</h1>
 
-  <div id="touch-controls" class="touch-controls">
-    <button id="leftBtn">←</button>
-    <button id="rightBtn">→</button>
-    <button id="jumpBtn">⤒</button>
-    <button id="abilityBtn">★</button>
-  </div>
+    <div id="personagens"></div>
+</div>
 
+<canvas id="gameCanvas" width="800" height="500"></canvas>
+
+<script src="loader.js"></script>
 <script src="game.js"></script>
+
 </body>
 </html>
